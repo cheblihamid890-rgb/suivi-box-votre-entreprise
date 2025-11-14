@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Instructions - Scanner Box</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 20px; 
+            max-width: 800px; 
+            margin: 0 auto; 
+            line-height: 1.6;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 { color: #2c3e50; text-align: center; margin-bottom: 30px; }
+        .step { 
+            background: #f8f9fa; 
+            padding: 20px; 
+            margin: 20px 0; 
+            border-radius: 10px;
+            border-left: 4px solid #3498db;
+        }
+        .step.magasin { border-left-color: #27ae60; }
+        .step.depot { border-left-color: #e74c3c; }
+        .qr-code { text-align: center; margin: 20px 0; }
+        .screenshot { width: 100%; max-width: 300px; border: 1px solid #ddd; border-radius: 5px; margin: 10px 0; }
+        .url-box { 
+            background: #2c3e50; 
+            color: white; 
+            padding: 15px; 
+            border-radius: 5px; 
+            margin: 10px 0;
+            font-family: monospace;
+            word-break: break-all;
+        }
+        .support { 
+            background: #fff3cd; 
+            border: 2px solid #ffc107;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 30px 0;
+            text-align: center;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px 5px;
+            font-weight: bold;
+        }
+        .btn-success { background: #27ae60; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📋 Instructions d'Utilisation</h1>
+        
+        <div class="step magasin">
+            <h2>📱 Pour les Magasins</h2>
+            
+            <h3>1. Première utilisation</h3>
+            <p><strong>Étape 1</strong> : Allez sur le lien magasin :</p>
+            <div class="url-box">https://VOTRE-USERNAME.github.io/suivi-box-votre-entreprise/magasin/</div>
+            
+            <p><strong>Étape 2</strong> : Ajoutez à l'écran d'accueil pour un accès rapide :</p>
+            <ul>
+                <li><strong>Android</strong> : Chrome → ⋮ (Menu) → "Ajouter à l'écran d'accueil"</li>
+                <li><strong>iPhone</strong> : Safari → 📤 (Partager) → "Sur l'écran d'accueil"</li>
+            </ul>
+            
+            <h3>2. Utilisation quotidienne</h3>
+            <ol>
+                <li>Ouvrir l'application depuis l'écran d'accueil</li>
+                <li>Choisir votre magasin dans la liste</li>
+                <li>Sélectionner le transfert à recevoir</li>
+                <li>Scanner les codes QR des box un par un</li>
+                <li>Confirmer la réception quand tous sont scannés</li>
+            </ol>
+
+            <div style="text-align: center; margin: 20px 0;">
+                <a href="../magasin/" class="btn btn-success">🚀 Accéder à l'Interface Magasin</a>
+            </div>
+        </div>
+
+        <div class="step depot">
+            <h2>🏭 Pour le Dépôt</h2>
+            <p><strong>Accès</strong> :</p>
+            <div class="url-box">https://VOTRE-USERNAME.github.io/suivi-box-votre-entreprise/depot/</div>
+            <p><strong>Mot de passe</strong> : <code>@@raiderHAMID1985</code></p>
+            
+            <h3>Processus :</h3>
+            <ol>
+                <li>Se connecter avec le mot de passe</li>
+                <li>Créer un nouveau transfert</li>
+                <li>Imprimer les étiquettes avec QR codes</li>
+                <li>Surveiller le suivi en temps réel</li>
+                <li>Vérifier les confirmations de réception</li>
+            </ol>
+
+            <div style="text-align: center; margin: 20px 0;">
+                <a href="../depot/" class="btn">🏭 Accéder à l'Interface Dépôt</a>
+            </div>
+        </div>
+
+        <div class="step">
+            <h2>❌ Problèmes Courants - Solutions</h2>
+            <p><strong>L'application ne se charge pas</strong> : Vérifiez la connexion internet</p>
+            <p><strong>Je ne vois pas mes transferts</strong> : Contactez le dépôt pour vérifier</p>
+            <p><strong>Le scan ne fonctionne pas</strong> : Appuyez sur ENTRÉE après avoir scanné le QR code</p>
+            <p><strong>Page blanche</strong> : Rechargez la page (F5 ou ⭮)</p>
+            <p><strong>Données perdues</strong> : Les données se sauvegardent automatiquement</p>
+        </div>
+
+        <div class="support">
+            <h2>📞 Support Urgent</h2>
+            <p><strong>RAOUF</strong> : +213 XXX XX XX XX</p>
+            <p><strong>HAKIM</strong> : +213 XXX XX XX XX</p>
+            <p><strong>Email</strong> : votre.email@entreprise.dz</p>
+            
+            <div style="margin-top: 15px;">
+                <a href="../" class="btn">🏠 Retour à l'Accueil</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Système de Suivi des Box - Votre Entreprise</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: Arial, sans-serif; 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .container { 
+            text-align: center; 
+            background: white; 
+            padding: 40px; 
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            max-width: 500px;
+            width: 100%;
+        }
+        .logo { font-size: 3em; margin-bottom: 20px; }
+        .btn { 
+            display: block; 
+            width: 100%; 
+            padding: 15px; 
+            margin: 10px 0; 
+            color: white; 
+            text-decoration: none; 
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .btn:hover { transform: translateY(-2px); }
+        .btn-depot { background: #e74c3c; }
+        .btn-magasin { background: #27ae60; }
+        .btn-instructions { background: #f39c12; }
+        .support { 
+            background: #f8f9fa; 
+            padding: 20px; 
+            border-radius: 10px; 
+            margin-top: 20px; 
+        }
+        h1 { color: #2c3e50; margin-bottom: 10px; }
+        p { color: #7f8c8d; margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">🏭➡️🏪</div>
+        <h1>Système de Suivi des Box</h1>
+        <p>Suivi en temps réel entre dépôt et magasins</p>
+        
+        <div style="margin: 30px 0;">
+            <button class="btn btn-depot" onclick="window.location.href='depot/'">
+                🏭 Accès Dépôt
+            </button>
+            <button class="btn btn-magasin" onclick="window.location.href='magasin/'">
+                🏪 Accès Magasin
+            </button>
+            <button class="btn btn-instructions" onclick="window.location.href='instructions/'">
+                📋 Instructions
+            </button>
+        </div>
+
+        <div class="support">
+            <h3>📞 Support Technique</h3>
+            <p><strong>RAOUF</strong>: +213 XXX XX XX XX</p>
+            <p><strong>HAKIM</strong>: +213 XXX XX XX XX</p>
+        </div>
+    </div>
+</body>
+</html>
